@@ -1,6 +1,6 @@
 # Revit API Docs - Code Samples
 
-Python Scripts Repository for [RevitAPIdocs.com](http://www.revitapidocs.com)
+Code Sample Repository for [RevitAPIdocs.com](http://www.revitapidocs.com)
 
 This repository allows the Revit API Community to contribute to the Code Samples section of Revit API Docs.
 
