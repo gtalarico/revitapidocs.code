@@ -1,10 +1,13 @@
 """
-Make Floors
-Create Floors from Selected Rooms
-TESTED REVIT API: 2015
+Makes Floor objects from the boundary of selected Rooms
 
-Gui Talarico
-github.com/gtalarico
+TESTED REVIT API: -
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
 
 import sys

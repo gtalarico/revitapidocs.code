@@ -1,18 +1,13 @@
 """
-RemoveUnderlay
 Removes Underlay From Selected Views.
-TESTED REVIT API: 2015 | 2016
 
-Copyright (c) 2014-2016 Gui Talarico
+TESTED REVIT API: 2015, 2016
 
-This script is part of PyRevitPlus: Extensions for PyRevit
-github.com/gtalarico
+Author: Gui Talarico | github.com.gtalarico
 
---------------------------------------------------------
-PyRevit Notice:
-Copyright (c) 2014-2016 Ehsan Iran-Nejad
-pyRevit: repository at https://github.com/eirannejad/pyRevit
-
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
 
 # Parts of this script were taken from:

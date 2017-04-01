@@ -1,5 +1,16 @@
-''' Create a text annotation element.
-Does not include start/commit transaction.'''
+"""
+Create a text annotation element.
+Does not include start/commit transaction.
+
+TESTED REVIT API: -
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
+"""
+
 
 def create_text(view, text, point, align):
     """Creates a Revit Text.

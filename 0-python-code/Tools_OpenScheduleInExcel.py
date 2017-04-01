@@ -1,11 +1,13 @@
 """
-Copyright (c) 2016 Gui Talarico
-Base script taken from pyRevit Respository.
+Creates a temporary .txt file of a selected schedule, and open it in Excel
 
-pyRevit Notice
-#################################################################
-See this link for a copy of the GNU General Public License protecting this package.
-https://github.com/eirannejad/pyRevit/blob/master/LICENSE
+TESTED REVIT API: 2015, 2016, 2017, 2017.1
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
 
 from Autodesk.Revit.DB import ViewSchedule, ViewScheduleExportOptions

@@ -1,9 +1,15 @@
 """
 Sets Color Mode of all Point Cloud Instances in View to Normal.
 
-github.com/gtalarico
-Tested with Revit API 2017
+TESTED REVIT API: 2017
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
+
 import clr
 
 clr.AddReference('RevitAPI')

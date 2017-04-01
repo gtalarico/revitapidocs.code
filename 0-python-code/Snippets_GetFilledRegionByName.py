@@ -1,3 +1,16 @@
+"""
+Retrieves a Filled Region by its Type Name
+If none is found, the last one is returned
+
+TESTED REVIT API: -
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
+"""
+
 from Autodesk.Revit.DB import Element, FilteredElementCollector
 from Autodesk.Revit.DB import FilledRegionType, FilledRegion
 

@@ -1,10 +1,15 @@
 """
-IFailuresPreprocessor example
-Places an unenclosed room in a project and removes the warning 
+IFailuresPreprocessor Example
+Places an unenclosed room in a project and removes the warning
 from transaction via the IFailuresPreprocessor
+
 TESTED REVIT API: 2015
-by Frederic Beaupere
-github.com/hdm-dt-fb
+
+Author: Frederic Beaupere | github.com/hdm-dt-fb
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
 
 import clr

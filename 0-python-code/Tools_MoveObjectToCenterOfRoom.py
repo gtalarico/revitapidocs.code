@@ -2,9 +2,15 @@
 Centers an object in the Room in it's in based on the center of the
 Room Bounding Box.
 
-github.com/gtalarico
-Tested with Revit API 2015
+TESTED REVIT API: 2015, 2016, 2017, 2017.1
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
+
 import clr
 from functools import wraps
 
@@ -71,4 +77,3 @@ if selection.Count > 0:
                 room_bbox = room.get_BoundingBox(active_view)
                 room_center = get_bbox_center_pt(room_bbox)
                 move_element(element, target_point=room_center)
-

@@ -1,14 +1,15 @@
 """
-CycleType
-Cycle through available types in family manager
-TESTED REVIT API: 2015
+Cycles through available types in family manager. Must be in Family Document
 
-github.com/gtalarico
+TESTED REVIT API: 2015, 2016, 2017, 2017.1
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
 
-__doc__ = 'Cycles through available types in family manager. \n' \
-          'Must be in Family Document.'
-__author__ = '@gtalarico'
 
 from Autodesk.Revit.DB import Transaction
 from Autodesk.Revit.UI import TaskDialog

@@ -1,3 +1,15 @@
+"""
+Get's selected elements
+
+TESTED REVIT API: -
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
+"""
+
 uidoc = __revit__.ActiveUIDocument
 
 def get_selected_elements():
@@ -13,4 +25,3 @@ def get_selected_elements():
     for element_id in selection_ids:
         elements.append(doc.GetElement(element_id))
     return elements
-    

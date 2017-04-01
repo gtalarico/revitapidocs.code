@@ -1,17 +1,14 @@
 """
-Auto Move Tag to Center of Room
+Moves all selected tags to the center of their corresponding rooms
 
-TESTED REVIT API:
-2015 | 2016
+TESTED REVIT API: 2015, 2016, 2017, 2017.1
 
-This was written to be used with PyRevit, but can easilly be used as
-a standalone script using the IronPythonShell, or
-a Dynamo Python component.
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
-
-__doc__ = "Move Room Tag to the Center of it's corresponding Room"
-__author__ = '@gtalarico'
-__version__ = '0.0.1'
 
 import clr
 

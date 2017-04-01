@@ -1,4 +1,15 @@
-''' Creates a Drafting View'''
+"""
+Creates a Drafting View
+
+TESTED REVIT API: -
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
+"""
+
 from Autodesk.Revit.DB import Transaction, Element
 from Autodesk.Revit.DB import FilteredElementCollector
 

@@ -1,8 +1,13 @@
 """
-SelectDoors
-Selects All Door Instances 
-TESTED REVIT API: 2015 | 2016
-Gui Talarico
+Select all instances of the the door Category, types included.
+
+TESTED REVIT API: 2015, 2016, 2017, 2017.1
+
+Author: Gui Talarico | github.com.gtalarico
+
+This file is part of www.revitapidocs.com
+For more information visit http://github.com/gtalarico/revitapidocs
+License: http://github.com/gtalarico/revitapidocs/master/
 """
 
 from Autodesk.Revit.UI import TaskDialog
@@ -21,4 +26,3 @@ doors = collector.ToElements()
 selection = uidoc.Selection
 collection = List[ElementId]([door.Id for door in doors])
 selection.SetElementIds(collection)
-
