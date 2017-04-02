@@ -18,7 +18,7 @@ doc = __revit__.ActiveUIDocument.Document
 uidoc = __revit__.ActiveUIDocument
 
 if not doc.IsFamilyDocument:
-    TaskDialog.Show('pyRevitPlus', 'Must be in Family Document.')
+    TaskDialog.Show('Message', 'Must be in Family Document.')
 
 else:
     family_types = [x for x in doc.FamilyManager.Types]
