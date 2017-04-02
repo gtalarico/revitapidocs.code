@@ -4,15 +4,15 @@ Code Sample Repository for [RevitAPIdocs.com/code](http://www.revitapidocs.com/c
 
 This repository allows the Revit API Community to contribute to the Code Samples section of Revit API Docs.
 
-## How does this work?
+## How does it work?
 
-The [Code Samples](http://www.revitapidocs.com/code) page uses the Github API to read this repository and inject the text into the browser. Note that for performance reasons, the code is Cached and will only be refreshed every 6 hours.
+The [Code Samples](http://www.revitapidocs.com/code) page uses the Github API to read this repository and inject the files into the browser. [Note: for performance reasons, the code is Cached and will only be refreshed every 6 hours]
 
 ## Contriutions
 
 ### Who can contribute?
 
-Anyone writes Revit API code and would like to share them with the community.
+Anyone who writes Revit API code and would like to share them with the community.
 
 ### What languages are accepted?
 
