@@ -5,9 +5,9 @@ TESTED REVIT API: 2015, 2016, 2017, 2017.1
 
 Author: Gui Talarico | github.com.gtalarico
 
-This file is part of www.revitapidocs.com
+This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs
-License: http://github.com/gtalarico/revitapidocs/master/
+License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 """
 
 import clr

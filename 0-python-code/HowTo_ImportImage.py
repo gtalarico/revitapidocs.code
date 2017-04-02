@@ -5,9 +5,9 @@ TESTED REVIT API: -
 
 Author: Gui Talarico | github.com.gtalarico
 
-This file is part of www.revitapidocs.com
+This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs
-License: http://github.com/gtalarico/revitapidocs/master/
+License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 """
 
 # See: http://www.revitapidocs.com/2015/05c3dbe2-fe7e-c293-761d-b11f356a011b.htm
