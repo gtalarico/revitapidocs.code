@@ -1,6 +1,6 @@
 # Revit API Docs - Code Samples
 
-Code Sample Repository for [RevitAPIdocs.com](http://www.revitapidocs.com)
+Code Sample Repository for [RevitAPIdocs.com/code](http://www.revitapidocs.com/code)
 
 This repository allows the Revit API Community to contribute to the Code Samples section of Revit API Docs.
 
@@ -51,11 +51,11 @@ All scripts should include the follwing at the beginning of the file:
     
     Tested Revit API: {comma separated years}
 
-    Author: {Name| {email, and or github page of Author} - optional
+    Author: {Name | {email, and or github page of Author}
 
-    This file is part of www.revitapidocs.com
+    Shared on www.revitapidocs.com
     For more information visit http://github.com/gtalarico/revitapidocs
-    License: http://github.com/gtalarico/revitapidocs/master/
+    License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 
 #### Examples
 
@@ -66,7 +66,7 @@ All scripts should include the follwing at the beginning of the file:
     
     Author: Gui Talarico | github.com.gtalarico
     
-    This file is part of www.revitapidocs.com
+    Shared on www.revitapidocs.com
     For more information visit http://github.com/gtalarico/revitapidocs
-    License: http://github.com/gtalarico/revitapidocs/master/
+    License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 
