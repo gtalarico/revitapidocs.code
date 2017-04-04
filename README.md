@@ -34,20 +34,17 @@ Python, CSharp
 
 1. Scripts should be placed in the appropriate folder, and have the expected extension for that language.
 2. The filename should be {Category}_{Name}.{ext}, for example: `Snippets_CreateDraftingView.py`
-3. The categories are only loosely defined, but I would be happy to revise them as the code base grows.
-4. Scripts must include the license and other information described below.
+3. The categories are only loosely defined, and can be revised as the code base grows.
+4. Scripts must include the license and information described below.
 
 ## License and Credits
 
 All contributions added to this repository will be shared using the MIT License.
-Authors can include their own credits, but they must also keep the following
-notes at the beginning of every file in the repository:
+Authors can include their own credits, but they should also keep the information listed below
+at the beginning of each file:
 
-### Credits
-
-All scripts should include the follwing at the beginning of the file:
-
-    {Description}
+    {Short Description}
+    {Longer Description - Optional}
     
     Tested Revit API: {comma separated years}
 
@@ -59,10 +56,11 @@ All scripts should include the follwing at the beginning of the file:
 
 #### Examples
 
-    Filename: CreateDraftingView.py
+Filename: CreateDraftingView.py
     
     Creates a drafting view
-    TESTED REVIT API: 2015
+    
+    TESTED REVIT API: 2015, 2016, 2017
     
     Author: Gui Talarico | github.com.gtalarico
     
