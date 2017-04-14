@@ -24,10 +24,6 @@ phase_options = {p.Name: p for p in phases}
 form = rpw.forms.SelectFromList('Set Phase', phase_options.keys(),
                                 description='Select a Phase')
 form_ok = form.show()
-if not form_ok:
-    __window__.Close()
-    import sys; sys.exit()
-
 phase = phase_options[form.selected]
 
 with rpw.TransactionGroup('Set Phases'):
