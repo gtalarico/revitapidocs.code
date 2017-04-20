@@ -4,7 +4,7 @@ revitapidocs.com/2016/fcb91231-2665-54b9-11d6-7ebcb7f235e2.htm
 
 TESTED REVIT API: -
 
-Author: Gui Talarico | github.com.gtalarico
+Author: Gui Talarico | github.com/gtalarico
 
 This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs

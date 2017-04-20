@@ -7,7 +7,7 @@ your function is called, and then commit after the call
 
 TESTED REVIT API: 2015, 2016, 2017, 2017.1
 
-Author: Gui Talarico | github.com.gtalarico
+Author: Gui Talarico | github.com/gtalarico
 
 This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs

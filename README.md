@@ -45,7 +45,7 @@ at the beginning of each file:
 
     {Short Description}
     {Longer Description - Optional}
-    
+
     Tested Revit API: {comma separated years}
 
     Author: {Name | {email, and or github page of Author}
@@ -57,14 +57,13 @@ at the beginning of each file:
 #### Examples
 
 Filename: CreateDraftingView.py
-    
+
     Creates a drafting view
-    
+
     TESTED REVIT API: 2015, 2016, 2017
-    
-    Author: Gui Talarico | github.com.gtalarico
-    
+
+    Author: Gui Talarico | github.com/gtalarico
+
     Shared on www.revitapidocs.com
     For more information visit http://github.com/gtalarico/revitapidocs
     License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
-

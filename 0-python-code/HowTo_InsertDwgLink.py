@@ -4,7 +4,7 @@ The same code can be used for other link types
 
 TESTED REVIT API: 2017
 
-Author: Gui Talarico | github.com.gtalarico
+Author: Gui Talarico | github.com/gtalarico
 
 This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs

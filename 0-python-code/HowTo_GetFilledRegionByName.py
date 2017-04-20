@@ -4,7 +4,7 @@ If none is found, the last one is returned
 
 TESTED REVIT API: -
 
-Author: Gui Talarico | github.com.gtalarico
+Author: Gui Talarico | github.com/gtalarico
 
 This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs

@@ -3,7 +3,7 @@ Makes Floor objects from the boundary of selected Rooms
 
 TESTED REVIT API: -
 
-Author: Gui Talarico | github.com.gtalarico
+Author: Gui Talarico | github.com/gtalarico
 
 This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs

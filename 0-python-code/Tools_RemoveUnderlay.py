@@ -3,7 +3,7 @@ Removes Underlay From Selected Views.
 
 TESTED REVIT API: 2015, 2016
 
-Author: Gui Talarico | github.com.gtalarico
+Author: Gui Talarico | github.com/gtalarico
 
 This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs
