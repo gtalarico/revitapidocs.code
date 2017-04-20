@@ -23,9 +23,11 @@ Python, CSharp
 2. Add / Modify the scripts on your fork
 3. Create a [Pull Request](https://github.com/gtalarico/revitapidocs/compare)
 
-    (More info on how to Create a Pull Request from your for [here](https://help.github.com/articles/creating-a-pull-request-from-a-fork/))
+    (More info on how to Create a Pull Request from your fork [here](https://help.github.com/articles/creating-a-pull-request-from-a-fork/))
 
 #### Regular contributions
+
+Once you have made a few contributions, feel free to request to be added as a Repository Contributor:
 
 1. Create an Issue Requesting to be added as a Contributor in the [Issues Page](https://github.com/gtalarico/revitapidocs/issues)
 2. Once you have been added as a contributor, you will be able to Push directly to the repository.
