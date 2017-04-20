@@ -72,7 +72,7 @@ def collect_params(param_element):
     param_dict = defaultdict(list)
 
     for param in parameters:
-        param_dict[param.Definition.Name].append(param.StorageType)
+        param_dict[param.Definition.Name].append(param.StorageType.ToString().split(".")[-1])
         param_dict[param.Definition.Name].append(param.HasValue)
 
         param_value = None
