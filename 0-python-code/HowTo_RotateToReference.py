@@ -9,6 +9,7 @@ This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs
 License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 """
+from Autodesk.Revit.DB import Line, XYZ
 
 # Works for point-based elements
 # Assumes rotations in XY plane
@@ -17,12 +18,12 @@ License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 def rotate_to_ref(ref_element, transform_element):
     """Match rotation between a reference element and an element to rotate"""
     try:
-        o_angle = ref_element.Location.Rotation
-        l_loc = ref_element.Location.Point
+        orientation_angle = ref_element.Location.Rotation
+        ref_location = ref_element.Location.Point
     except Exception as errmsg:
-        logger.debug('Could not get element Rotation or Point')
-        logger.debug('Error: {}'.format(errmsg))
+        print('Could not get element Rotation or Point')
+        print('Error: {}'.format(errmsg))
 
-    rot_ang = o_angle - transform_element.Location.Rotation
-    rot_axis = DB.Line.CreateBound(l_loc, DB.XYZ(l_loc.X, l_loc.Y, l_loc.Z+1.0))
+    rot_ang = orientation_angle - transform_element.Location.Rotation
+    rot_axis = Line.CreateBound(ref_location, XYZ(ref_location.X, ref_location.Y, ref_location.Z+1.0))
     transform_element.Location.Rotate(rot_axis, rot_ang)
