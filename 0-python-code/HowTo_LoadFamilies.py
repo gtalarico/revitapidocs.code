@@ -8,13 +8,12 @@ Requires rpw library: github.com/gtalarico/revitpythonwrapper
 
 Author: Grant Foster | github.com/grantdfoster
 """
-
-import rpw
 import os
 import clr
-from rpw import doc, DB
-from rpw.db import Transaction
-from Autodesk.Revit.DB import IFamilyLoadOptions, FamilySource
+import Autodesk.Revit.DB
+from Autodesk.Revit.DB import IFamilyLoadOptions, FamilySource, Transaction
+
+doc = __revit__.ActiveUIDocument.Document
 
 
 class FamilyLoadOptions(IFamilyLoadOptions):
@@ -39,19 +38,27 @@ def load_family(folder_path='Insert Path Here', file_name='Insert File Name Here
     if os.path.exists(family_path) is False:
         return 'Path does not exist.'
 
-    family_loaded = clr.Reference[DB.Family]()
-    with Transaction('Load & Activate Family'):
-        loaded = doc.LoadFamily(family_path, FamilyLoadOptions(), family_loaded)
-        if loaded:
-            family = family_loaded.Value
-            symbols = []
-            for family_symbol_id in family.GetFamilySymbolIds():
-                family_symbol = doc.GetElement(family_symbol_id)
-                symbols.append(family_symbol)
-            try:
-                [s.Activate() for s in symbols]
-            except:
-                pass
-            return symbols
-        else:
-            return 'Family already exists in project.'
+    family_loaded = clr.Reference[Autodesk.Revit.DB.Family]()
+    t = Transaction(doc)
+    t.Start('Load Family')
+
+    loaded = doc.LoadFamily(family_path, FamilyLoadOptions(), family_loaded)
+    if loaded:
+        family = family_loaded.Value
+        symbols = []
+
+        for family_symbol_id in family.GetFamilySymbolIds():
+            family_symbol = doc.GetElement(family_symbol_id)
+            symbols.append(family_symbol)
+
+        try:
+            [s.Activate() for s in symbols]
+        except:
+            pass
+
+        t.Commit()
+        return symbols
+
+    else:
+        t.Commit()
+        return 'Family already exists in project.'
