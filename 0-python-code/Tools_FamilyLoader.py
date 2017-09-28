@@ -51,10 +51,11 @@ def load_family(folder_path='Insert Path Here', file_name='Insert File Name Here
             family_symbol = doc.GetElement(family_symbol_id)
             symbols.append(family_symbol)
 
-        try:
-            [s.Activate() for s in symbols]
-        except:
-            pass
+        for s in symbols:
+            try:
+                s.Activate()
+            except:
+                pass
 
         t.Commit()
         return symbols
