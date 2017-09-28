@@ -1,3 +1,5 @@
+#TODO: Needs usage example including creation of `transform_element`
+
 """
 Function for rotating an element based on rotation of another element.
 
