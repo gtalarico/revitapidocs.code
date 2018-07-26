@@ -1,4 +1,6 @@
-# Initial page
+# Code
 
-## [Code Samples](./)
+[Python vs Iron Python](python-vs-ironpython.md)
+
+[Python-Revit Learning Resources](learning-resources.md)
 
