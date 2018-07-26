@@ -1,3 +1,4 @@
+```python
 """
 Get's selected elements
 
@@ -25,3 +26,4 @@ def get_selected_elements():
     for element_id in selection_ids:
         elements.append(doc.GetElement(element_id))
     return elements
+```

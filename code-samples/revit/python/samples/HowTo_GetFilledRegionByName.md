@@ -1,3 +1,4 @@
+```python
 """
 Retrieves a Filled Region by its Type Name
 If none is found, the last one is returned
@@ -30,3 +31,4 @@ def fregion_id_by_name(name=None):
     else:
         print('Color not specified or not found.')
         return fregion_type.Id
+```

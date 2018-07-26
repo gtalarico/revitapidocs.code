@@ -1,3 +1,4 @@
+```python
 """
 Examples of C# code, followed by its Python Equivalent
 
@@ -103,3 +104,4 @@ if results is None or results.Size != 1:
 
 intersection = results.Item[0]
 xyz_point = intersection.XYZPoint
+```

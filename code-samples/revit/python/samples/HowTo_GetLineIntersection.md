@@ -1,3 +1,4 @@
+```python
 """
 Get Line Intersection
 Get's intersection of 2 lines
@@ -64,3 +65,4 @@ private XYZ GetIntersection(
   return iResult.XYZPoint;
 }
 """
+```

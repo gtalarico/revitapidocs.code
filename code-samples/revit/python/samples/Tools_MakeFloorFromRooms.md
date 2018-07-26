@@ -1,3 +1,4 @@
+```python
 """
 Makes Floor objects from the boundary of selected Rooms
 
@@ -109,3 +110,4 @@ if not new_floors:
 
 for new_floor in new_floors:
     view = make_floor(new_floor)
+```

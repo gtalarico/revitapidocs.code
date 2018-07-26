@@ -1,3 +1,4 @@
+```python
 """
 Inserts a DWG Link into the Active View.
 The same code can be used for other link types
@@ -27,3 +28,4 @@ t.Start('Load Link')
 doc.Link(r"C:\Some\Path\YourDrawing.dwg", options, uidoc.ActiveView, link)
 t.Commit()
 # link is not <Autodesk.Revit.DB.ImportInstance>
+```

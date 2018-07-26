@@ -1,3 +1,4 @@
+```python
 """
 Creates a temporary .txt file of a selected schedule, and open it in Excel
 
@@ -54,3 +55,4 @@ for element_id in selected_ids:
     else:
         print('Could not find excel. EXCEL: {}'.format(EXCEL))
 print('Done')
+```

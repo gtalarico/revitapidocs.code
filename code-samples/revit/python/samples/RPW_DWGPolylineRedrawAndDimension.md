@@ -1,3 +1,4 @@
+```python
 """
 Linked DWG PolyLine Redraw and Dimension Example
 
@@ -59,3 +60,4 @@ with db.Transaction("redraw dim_help layer dwg polylines"):
                                                   det_line.GeometryCurve,
                                                   line_refs)
                     begin = pts
+```

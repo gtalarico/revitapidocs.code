@@ -1,3 +1,4 @@
+```python
 """
 Retrieves a phase by its Name
 
@@ -22,3 +23,4 @@ def get_phase_by_name(phase_name):
 phase = get_phase_by_name('01 - Existing')
 print phase.Name
 print phase.Id
+```

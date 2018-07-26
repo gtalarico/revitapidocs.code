@@ -1,3 +1,4 @@
+```python
 """
 Solidify Selected Element BoundingBox Example
 Creates a Generic Model Direct Shape
@@ -47,3 +48,4 @@ category_id = ElementId(Bic.OST_GenericModel)
 with db.Transaction("solid_bbox_direct_shape") as tx:
     direct_shape = DirectShape.CreateElement(doc, category_id, "A", "B")
     direct_shape.SetShape([extrusion])
+```

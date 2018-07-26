@@ -1,3 +1,4 @@
+```python
 """
 Forcefully set the phase for all Selected Objects.
 User will be prompted with a simple form to select the desired phase
@@ -34,3 +35,4 @@ with rpw.TransactionGroup('Set Phases'):
                 element.parameters.builtins['PHASE_CREATED'].value = phase.Id
             except rpw.exceptions.RPW_Exception:
                 pass
+```

@@ -1,3 +1,4 @@
+```python
 """
 Selects All Door Instances that have been Mirrored.
 
@@ -39,3 +40,4 @@ TaskDialog.Show("Mirrored Doors", "Mirrored: {} of {} Doors".format(
 selection = uidoc.Selection
 collection = List[ElementId]([door.Id for door in mir_doors])
 selection.SetElementIds(collection)
+```

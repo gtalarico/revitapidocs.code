@@ -1,3 +1,4 @@
+```python
 """
 Change Workset Settings
 Set workset to be hidden by default in all views
@@ -33,3 +34,4 @@ for workset in worksets:
         defaultVisibility.SetWorksetVisibility(workset.Id, False)
 
         t.Commit()
+```

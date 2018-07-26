@@ -1,3 +1,4 @@
+```python
 """
 Sets Color Mode of all Point Cloud Instances in View to Normal.
 
@@ -30,3 +31,4 @@ for pt in pts:
     t.Start('Set Pt Cloud Color Mode')
     pt_overrides.SetPointCloudOverrideSettings(pt.Id, pt_cloud_settings)
     t.Commit()
+```

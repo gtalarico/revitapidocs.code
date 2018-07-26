@@ -1,3 +1,4 @@
+```python
 """
 Create a Workset
 Creates a Workset - Revit 2017+
@@ -21,3 +22,4 @@ t = Transaction(doc)
 t.Start('Create Workset')
 Workset.Create(doc, workset_name)
 t.Commit()
+```

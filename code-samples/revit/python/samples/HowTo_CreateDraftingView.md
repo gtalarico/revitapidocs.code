@@ -1,3 +1,4 @@
+```python
 """
 Creates a Drafting View
 
@@ -36,3 +37,4 @@ drafting_view = ViewDrafting.Create(doc, drafting_type_id)
 # drafting_view.Name = 'New View' - Optional View Name - May fail if already exists.
 
 t.Commit()
+```

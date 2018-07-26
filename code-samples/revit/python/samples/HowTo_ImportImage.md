@@ -1,3 +1,4 @@
+```python
 """
 Imports an Image
 
@@ -31,3 +32,4 @@ doc.Import(new_img_path, import_options , doc.ActiveView, new_img_element)
 new_img_width = new_img_element.get_Parameter(BuiltInParameter.RASTER_SHEETWIDTH)
 new_img_width.Set(width_in_ft)
 t.Commit()
+```

@@ -1,3 +1,4 @@
+```python
 """
 Creates a TaskDialog
 
@@ -57,4 +58,4 @@ if result == TaskDialogResult.CommandLink2:
     print('Button 2 Was Pressed')
 if dialog.WasVerificationChecked():
     print('Verification was Checked')
-
+```

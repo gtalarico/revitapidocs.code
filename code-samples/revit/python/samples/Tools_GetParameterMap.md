@@ -1,3 +1,4 @@
+```python
 """
 Prints a Parameter map of the first element in selection.
 Where applicable it prints Instance and type parameter map.
@@ -25,7 +26,7 @@ def print_param_mapping(param_dict):
     """
     Prints a key value pairs of the parameter dict
     Args:
-        param_dict: 
+        param_dict:
     Returns:
     """
     for key in param_dict:
@@ -93,3 +94,4 @@ if selection.Count > 0:
     get_parameter_map(selection[0])
 else:
     print("please select an element.")
+```

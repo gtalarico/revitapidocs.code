@@ -1,3 +1,4 @@
+```python
 """
 Cycles through available types in family manager. Must be in Family Document
 
@@ -40,3 +41,4 @@ else:
             t.Start()
             doc.FamilyManager.CurrentType = family_type
             t.Commit()
+```

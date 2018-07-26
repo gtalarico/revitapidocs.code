@@ -1,3 +1,4 @@
+```python
 """
 Register Event Handler
 
@@ -25,3 +26,4 @@ def event_handler_function(sender, args):
 # I'm using ViewActivating event here as example.
 # The handler function will be executed every time a Revit view is activated:
 __revit__.ViewActivating += EventHandler[ViewActivatingEventArgs](event_handler_function)
+```

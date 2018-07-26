@@ -1,3 +1,4 @@
+```python
 """
 Selects unbound rooms in model
 
@@ -33,3 +34,4 @@ selection = uidoc.Selection
 selection.SetElementIds(collection)
 
 TaskDialog.Show('Unbound Rooms', "{} unbound rooms selected". format(len(ub_rooms)))
+```

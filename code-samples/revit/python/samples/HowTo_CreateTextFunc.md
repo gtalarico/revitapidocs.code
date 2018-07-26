@@ -1,3 +1,4 @@
+```python
 """
 Create a text annotation element.
 Does not include start/commit transaction.
@@ -38,3 +39,4 @@ def create_text(view, text, point, align):
                                           text_length,
                                           align_options[align],
                                           text)
+```

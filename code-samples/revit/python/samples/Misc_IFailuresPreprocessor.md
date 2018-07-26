@@ -1,3 +1,4 @@
+```python
 """
 IFailuresPreprocessor Example
 Places an unenclosed room in a project and removes the warning
@@ -49,3 +50,4 @@ room = doc.Create.NewRoom(active_lvl, UV(0,0))
 
 # "End" the transaction
 tx.Commit()
+```

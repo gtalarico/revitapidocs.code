@@ -1,3 +1,4 @@
+```python
 """
 Moves all selected tags to the center of their corresponding rooms
 
@@ -40,3 +41,4 @@ for room_tag in room_tags:
     room_tag.Location.Move(translation)
 
 transaction.Commit()
+```
