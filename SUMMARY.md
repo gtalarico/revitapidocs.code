@@ -1,4 +1,7 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Code](README.md)
+* [Python](python/README.MD)
+    * [Python vs IronPython](python/python-vs-ironpython.md)
+    * [Python-Revit Learning Resources](python/python-learning-resources.md)
 
