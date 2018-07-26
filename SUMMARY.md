@@ -10,5 +10,5 @@
 * [Code Samples](code-samples/README.md)
   * [Revit](code-samples/revit/README.md)
     * [Python](code-samples/revit/python/README.md)
-      * [test](code-samples/revit/python/test.md)
+      * [Change Workset Settings](code-samples/revit/python/samples/HowTo_ChangeWorksetSetting.py)
 
