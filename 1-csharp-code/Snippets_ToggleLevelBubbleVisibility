@@ -9,7 +9,7 @@ For more information visit http://github.com/gtalarico/revitapidocs
 License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 */
 
-public void PassCategoryAndClassAsVariables()
+public void ToggleLevelBubbles()
 {
     Document doc = this.ActiveUIDocument.Document;
     Selection sel = this.ActiveUIDocument.Selection;
