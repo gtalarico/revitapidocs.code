@@ -1,9 +1,10 @@
 """
-Moves all selected tags to the center of their corresponding rooms
+Moves all tags to the "Room Location Point" of their corresponding rooms
 
 TESTED REVIT API: 2015, 2016, 2017, 2017.1
 
 Author: Gui Talarico | github.com/gtalarico
+        min.naung | https://twentytwo.space/contact | https://github.com/mgjean	
 
 This file is shared on www.revitapidocs.com
 For more information visit http://github.com/gtalarico/revitapidocs
@@ -16,17 +17,15 @@ clr.AddReference('RevitAPI')
 clr.AddReference('RevitAPIUI')
 
 from Autodesk.Revit.DB import Transaction
-from Autodesk.Revit.DB import FilteredElementCollector, BuiltInCategory
-from Autodesk.Revit.DB.Architecture import Room
+from Autodesk.Revit.DB import FilteredElementCollector, SpatialElementTag
 
 uidoc = __revit__.ActiveUIDocument
 doc = __revit__.ActiveUIDocument.Document
 
 ###########################################################################
 # TAG COLLECTOR [IN VIEW BY: doc.ActiveView.Id]
-room_tags = FilteredElementCollector(doc, doc.ActiveView.Id).OfCategory(
-            BuiltInCategory.OST_RoomTags).WhereElementIsNotElementType().\
-            ToElements()
+room_tags = FilteredElementCollector(doc, doc.ActiveView.Id)\
+            .OfClass(SpatialElementTag).ToElements()
 ###########################################################################
 
 transaction = Transaction(doc, 'Move Room Tags on Room Points')
