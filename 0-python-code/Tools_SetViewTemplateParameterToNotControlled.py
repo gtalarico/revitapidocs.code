@@ -17,10 +17,11 @@ License: http://github.com/gtalarico/revitapidocs/blob/master/LICENSE.md
 import clr
 clr.AddReference("RevitAPI")
 from Autodesk.Revit.DB import FilteredElementCollector as Fec
+from Autodesk.Revit.DB import Transaction
 from System.Collections.Generic import List
-from rpw import db, doc
 
 
+doc = __revit__.ActiveUIDocument.Document
 all_views = Fec(doc).OfClass(View).ToElements()
 view_templates = [view for view in all_views if view.IsTemplate]
 first_view_template = view_templates[0]
@@ -38,15 +39,19 @@ for param_id in view_template_params:
 
 # set the switch off parameter to be non controlled
 # while keeping the setting of the other parameters
-with db.Transaction("adjust view_templates"):
 
-    for view_template in view_templates:
-        set_param_list = List[ElementId]()
-        set_param_list.Add(switch_off_param_id)
+t = Transaction(doc, "adjust view_templates")
+t.Start()
+
+for view_template in view_templates:
+    set_param_list = List[ElementId]()
+    set_param_list.Add(switch_off_param_id)
+    
+    non_controlled_param_ids = view_template.GetNonControlledTemplateParameterIds()
+    
+    for param_id in non_controlled_param_ids:
+        set_param_list.Add(param_id)
         
-        non_controlled_param_ids = view_template.GetNonControlledTemplateParameterIds()
-        
-        for param_id in non_controlled_param_ids:
-            set_param_list.Add(param_id)
-            
-        view_template.SetNonControlledTemplateParameterIds(set_param_list)
+    view_template.SetNonControlledTemplateParameterIds(set_param_list)
+
+t.Commit()
